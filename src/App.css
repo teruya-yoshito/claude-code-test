@@ -1,0 +1,166 @@
+.app {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 480px;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #6c63ff;
+  padding: 28px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.todo-input {
+  display: flex;
+  padding: 16px;
+  gap: 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.todo-input input {
+  flex: 1;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.todo-input input:focus {
+  border-color: #6c63ff;
+}
+
+.todo-input button {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.todo-input button:hover {
+  background: #5a52d5;
+}
+
+.todo-list {
+  list-style: none;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  gap: 12px;
+  border-bottom: 1px solid #f8f8f8;
+  transition: background 0.15s;
+}
+
+.todo-item:hover {
+  background: #fafafa;
+}
+
+.todo-item input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  accent-color: #6c63ff;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.todo-item span {
+  flex: 1;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.todo-item button {
+  background: none;
+  border: none;
+  color: #ccc;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+  transition: color 0.15s;
+}
+
+.todo-item button:hover {
+  color: #ff6b6b;
+}
+
+.empty {
+  text-align: center;
+  color: #bbb;
+  padding: 40px;
+  font-size: 0.9rem;
+}
+
+.todo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-top: 1px solid #f0f0f0;
+  font-size: 0.85rem;
+  color: #999;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filters {
+  display: flex;
+  gap: 4px;
+}
+
+.filters button {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  color: #777;
+  transition: all 0.15s;
+}
+
+.filters button:hover {
+  color: #6c63ff;
+}
+
+.filters button.active {
+  border-color: #6c63ff;
+  color: #6c63ff;
+}
+
+.todo-footer > button {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  color: #777;
+  transition: all 0.15s;
+}
+
+.todo-footer > button:hover {
+  color: #ff6b6b;
+}
